@@ -1,0 +1,86 @@
+{
+    "model": "BACH_Hybrid_Global_Local_MIL",
+    "checkpoint": "bach_hybrid_global_local_best_accuracy.keras",
+    "test_images": 60,
+    "correct": 50,
+    "incorrect": 10,
+    "accuracy": 0.8333333333333334,
+    "wilson_95_ci": [
+        0.7196838683638547,
+        0.9068682302080855
+    ],
+    "balanced_accuracy": 0.8217524509803921,
+    "macro_f1": 0.8271469521469521,
+    "weighted_f1": 0.8327434577434578,
+    "classification_report": {
+        "Benign": {
+            "precision": 0.8,
+            "recall": 0.6666666666666666,
+            "f1-score": 0.7272727272727273,
+            "support": 12.0
+        },
+        "InSitu": {
+            "precision": 0.7647058823529411,
+            "recall": 0.8125,
+            "f1-score": 0.7878787878787878,
+            "support": 16.0
+        },
+        "Invasive": {
+            "precision": 0.8,
+            "recall": 0.9411764705882353,
+            "f1-score": 0.8648648648648649,
+            "support": 17.0
+        },
+        "Normal": {
+            "precision": 1.0,
+            "recall": 0.8666666666666667,
+            "f1-score": 0.9285714285714286,
+            "support": 15.0
+        },
+        "accuracy": 0.8333333333333334,
+        "macro avg": {
+            "precision": 0.8411764705882353,
+            "recall": 0.8217524509803921,
+            "f1-score": 0.8271469521469521,
+            "support": 60.0
+        },
+        "weighted avg": {
+            "precision": 0.8405882352941176,
+            "recall": 0.8333333333333334,
+            "f1-score": 0.8327434577434578,
+            "support": 60.0
+        }
+    },
+    "confusion_matrix": [
+        [
+            8,
+            2,
+            2,
+            0
+        ],
+        [
+            1,
+            13,
+            2,
+            0
+        ],
+        [
+            0,
+            1,
+            16,
+            0
+        ],
+        [
+            1,
+            1,
+            0,
+            13
+        ]
+    ],
+    "class_order": [
+        "Benign",
+        "InSitu",
+        "Invasive",
+        "Normal"
+    ]
+}

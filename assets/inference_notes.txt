@@ -1,0 +1,6 @@
+Inference contract:
+- Classifier inputs are [global_features, local_features].
+- Global features: resize source to 224x224, JPEG encode/decode, EfficientNetB0 pooled feature.
+- Local features: original TIFF crops using patch_coordinates.npy (88 patches, 224x224), EfficientNetB0 pooled features.
+- The app currently encodes the resized global JPEG at quality=95, matching the apparent quantization quality of the packaged processed JPEG samples. Verify against a known original TIFF/processed JPEG pair if exact original export settings become available.
+- Local patches are extracted from original RGB TIFF pixels.

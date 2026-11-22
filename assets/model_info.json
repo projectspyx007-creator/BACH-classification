@@ -1,0 +1,28 @@
+{
+    "project": "BACH Breast Histopathology Classification",
+    "architecture": "Hybrid Global-Local Attention MIL",
+    "backbone": "EfficientNetB0 ImageNet",
+    "input_global": [
+        1280
+    ],
+    "input_local": [
+        88,
+        1280
+    ],
+    "output_classes": [
+        "Benign",
+        "InSitu",
+        "Invasive",
+        "Normal"
+    ],
+    "patch_count": 88,
+    "patch_size": 224,
+    "patch_stride": 192,
+    "model_parameters": 386436,
+    "tensorflow_version": "2.21.0",
+    "limitations": [
+        "Research prototype, not a clinical diagnostic system.",
+        "255 images lacked patient identifiers.",
+        "Complete patient independence cannot be guaranteed."
+    ]
+}

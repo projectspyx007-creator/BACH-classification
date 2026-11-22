@@ -1,0 +1,22 @@
+BACH RESEARCH STUDIO — LOCAL MAC SETUP
+
+1. Unzip this folder somewhere convenient (e.g. Documents).
+2. Open the folder in Finder.
+3. Double-click Start_BACH_Studio.command.
+4. The first launch installs Python dependencies; this can take several minutes and requires internet.
+5. Your browser should open the local Streamlit website. If not, copy the Local URL shown in Terminal (usually http://localhost:8501).
+6. Keep the Terminal window open while using the website. Press Control+C in Terminal to stop it.
+
+REQUIREMENTS
+- Apple Silicon or Intel Mac with macOS
+- Python 3.11 installed from python.org
+- Internet for the first dependency installation only
+- Several GB of free disk space for TensorFlow and its dependencies
+
+NOTES
+- All inference runs locally after setup; uploaded images are not sent to a remote server by this app.
+- The package includes the original research model and feature extractor.
+- The first inference may take longer while TensorFlow initializes.
+- This is a research prototype, not a clinical diagnostic system.
+
+If macOS blocks the .command file: right-click it, choose Open, then confirm Open.

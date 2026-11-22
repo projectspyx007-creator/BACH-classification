@@ -1,0 +1,3 @@
+model,accuracy,balanced_accuracy,macro_f1
+Hybrid_best_accuracy,0.8,0.7981900452488688,0.8022727272727272
+Hybrid_best_loss,0.8,0.7981900452488688,0.8022727272727272
